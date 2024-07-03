@@ -79,6 +79,7 @@ jobs:
   hashes:
     runs-on: ubuntu-latest
     needs: build
+    steps:
       - uses: MCJack123/ghaction-generate-release-hashes@v3
         with:
           hash-type: sha256
